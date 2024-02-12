@@ -4,7 +4,8 @@
 #include <string.h>
 #include <sstream>
 #include <fstream>
-#include <time.h>
+#include <chrono>
+
 
 using namespace std;
 
@@ -445,8 +446,8 @@ int main(){
 
     
     ProcessNest processNest;
-    timespec start;
-    clock_gettime(CLOCK_REALTIME, &start);
+    auto start = chrono::high_resolution_clock::now();
+
 
     int depth = inputData.bufferSize;
     int checker = 1;
@@ -454,10 +455,9 @@ int main(){
 
     nestedLoop(depth,1,inputData,processNest);
 
-    timespec end;
-    clock_gettime(CLOCK_REALTIME, &end);
-    double duration = (end.tv_sec - start.tv_sec) * 1000.0;
-    duration += (end.tv_nsec - start.tv_nsec) / 1000000.0;
+    
+    auto end = chrono::high_resolution_clock::now();
+    double duration = chrono::duration<double>(end - start).count();
     cout << endl << "result : " << endl;
     writeToCLI(processNest,duration);
    
