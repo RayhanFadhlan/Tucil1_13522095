@@ -31,7 +31,7 @@ sequences_n_reward
 ```
 
 2. By using a random generator
-![image](https://github.com/RayhanFadhlan/Tucil1_13522095/assets/65324331/2f4e7895-33ac-4212-8666-621e7c89d944)
+
 
 
 Program is made by
