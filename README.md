@@ -33,6 +33,7 @@ sequences_n_reward
 2. By using a random generator
 
 
+
 Program is made by
 Rayhan Fadhlan
 13522095
