@@ -457,7 +457,7 @@ int main(){
 
     
     auto end = chrono::high_resolution_clock::now();
-    double duration = chrono::duration<double>(end - start).count();
+    double duration = chrono::duration<double, std::milli>(end - start).count();
     cout << endl << "result : " << endl;
     writeToCLI(processNest,duration);
    
