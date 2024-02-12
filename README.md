@@ -6,6 +6,8 @@ This simple CLI program is a minigame based on [Cyberpunk 2077 game](https://cyb
 2. Matrix (consist of tokens choosed to arrange code sequence)
 3. Sequence (series of token (two or more) that has to be matched)
 4. Buffer (Maximum number of token that can be sequentially arranged)
+## Program requirement
+This program require GNU g++ to be installed beforehand
 
 ## How to run the program
 ```
@@ -35,6 +37,6 @@ sequences_n_reward
 <img src ="https://github.com/RayhanFadhlan/Tucil1_13522095/assets/65324331/c126fd55-ab50-4add-aa1f-42a3b6817eb8" width = 400>
 
 
-Program is made by
+Program was made by
 Rayhan Fadhlan
 13522095
