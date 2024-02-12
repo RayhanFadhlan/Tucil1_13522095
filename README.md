@@ -1,7 +1,7 @@
 # Tugas Kecil 1 Strategi Algoritma
 
 ## Description
-This simple CLI program is a minigame based on Cyberpunk 2077 game. This  minigame is a hacking simulation of local network from ICE (Intrusion Countermeasures Electronics) in Cyberpunk 2077. The component of this minigame is :
+This simple CLI program is a minigame based on [Cyberpunk 2077 game](https://cyberpunk-hacker.com/). This  minigame is a hacking simulation of local network from ICE (Intrusion Countermeasures Electronics) in Cyberpunk 2077. The component of this minigame is :
 1. Token (consist of two alphanumeric character each, A9 F5 FF)
 2. Matrix (consist of tokens choosed to arrange code sequence)
 3. Sequence (series of token (two or more) that has to be matched)
