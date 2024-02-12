@@ -1,0 +1,21 @@
+6
+6 6
+bb dd cc aa bb aa
+cc cc cc aa bb bb
+bb dd bb dd dd cc
+dd aa dd aa cc bb
+aa cc bb aa cc dd
+dd cc dd cc bb aa
+6
+dd dd cc dd
+-20
+cc bb bb aa
+-7
+dd bb
+93
+dd
+75
+cc
+-45
+bb dd
+-80
