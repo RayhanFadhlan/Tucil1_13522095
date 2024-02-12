@@ -385,7 +385,7 @@ void generateRandom(InputData & inputData){
 
 }
 
-void writeToTxt(ProcessNest & processNest,int time){
+void writeToTxt(ProcessNest & processNest,double time){
     string basepath = "../test/output/";
     string filename;
     cout << "Enter file name: \n";
@@ -407,7 +407,7 @@ void writeToTxt(ProcessNest & processNest,int time){
     }
 }
 
-void writeToCLI(ProcessNest & processNest, int time){
+void writeToCLI(ProcessNest & processNest, double time){
     cout << processNest.maxPoint << endl;
     
     for(int i = 0 ; i < processNest.resultBuffer.size();i++){
@@ -445,7 +445,8 @@ int main(){
 
     
     ProcessNest processNest;
-    clock_t start = clock();
+    timespec start;
+    clock_gettime(CLOCK_REALTIME, &start);
 
     int depth = inputData.bufferSize;
     int checker = 1;
@@ -453,8 +454,10 @@ int main(){
 
     nestedLoop(depth,1,inputData,processNest);
 
-    clock_t end = clock();
-    int duration = (end - start);
+    timespec end;
+    clock_gettime(CLOCK_REALTIME, &end);
+    double duration = (end.tv_sec - start.tv_sec) * 1000.0;
+    duration += (end.tv_nsec - start.tv_nsec) / 1000000.0;
     cout << endl << "result : " << endl;
     writeToCLI(processNest,duration);
    
